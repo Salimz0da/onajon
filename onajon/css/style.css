@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+img {
+  width: 350px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.content {
+  padding: 15px;
+  border: 2px solid aqua;
+}
+.bacjground-itme {
+  border-radius: 12px;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  background-color: rgba(128, 128, 128, 0.472);
+}
+.bacjground-itme p {
+  padding-bottom: 10px;
+}
+
+
+html {
+  background: url(../img/background/1612944398_10-p-krasnii-fon-yarkii-s-tsvetami-14.jpg)
+    repeat;
+  background-size: 100%;
+}
+
+.btn {
+  padding: 25px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.btn:active{
+background-color: gray;
+}
+
+.row-element{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+      max-width: 300px;
+    }
+    img {
+      width: 280px;
+    }
+    .btn{
+        padding: 5px;
+    }
+    .row-element{
+        padding-top: 15px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+  }
